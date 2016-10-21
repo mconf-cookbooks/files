@@ -7,3 +7,4 @@
 #
 
 default['files']['create'] = []
+default['files']['create_dir'] = true

@@ -4,7 +4,7 @@ A very simple cookbook to deploy files placed on the files section of the cookbo
 
 If the file doesn't exist, it is created. If it already exists, it has its permissions set.
 
-If the directory doesn't exist, it is created and the same file permissions are set. If it already exists, nothing is changed.
+If the directory doesn't exist, by default it will be created with the same file permissions and ownership. If it already exists, nothing is changed.
 
 ## Requirements
 
