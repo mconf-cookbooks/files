@@ -21,7 +21,7 @@ node['files']['create'].each do |file|
     mode dir['chmod']
     recursive true
     action :create
-    not_if{ Dir.exist? dir && node['files']['create_dir'] }
+    not_if{ Dir.exist?(dir) || ! node['files']['create_dir'] }
   end
   
   cookbook_file file['path'] do
